@@ -1,0 +1,92 @@
+.login-wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("./login_bg.jpg") no-repeat;
+  background-size: cover;
+  .login-box{
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background:rgba(255,255,255,1);
+    box-shadow:0 0 31px 0 rgba(219,235,255,1);
+    border-radius:11px;
+    z-index: 2;
+  }
+
+  .box-right{
+    width: 485px;
+    float: right;
+    position: relative;
+    height: 100%;
+    .login-content{
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      .login-errmsg{
+        visibility: hidden;
+        margin-top: 35px;
+        font-size: 16px;
+        color: #D0021B;
+        text-align: left;
+        .err-icon{
+          margin-right: 7px;
+        }
+      }
+      .login-form{
+        .login-input{
+          .ant-input-prefix{
+            left: 0;
+          }
+          .ant-input{
+            color: #979797;
+            border: 0;
+            border-radius: 0;
+            border-bottom:1px solid #D9D9D9;
+            transition-duration: 99999s;
+            padding-left: 28px;
+            &:focus {
+              outline: 0;
+              box-shadow:none;
+              border-right-width: 0 !important;
+            }
+          }
+        }
+        .login-input-icon{
+          font-size: 16px;
+          color: #979797;
+        }
+      }
+      .login-copyright{
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: 39px;
+        font-size: 12px;
+        color:rgba(0,0,0,0.45);
+        line-height:20px;
+        text-align: center;
+      }
+    }
+  }
+  .login-logo{
+    margin-top: 86px;
+    text-align: center;
+    .login-logo-icon{
+      width: 50px;
+      height: 36px;
+      margin: 0 auto;
+      background: url("../../lib/style/logo.svg") no-repeat;
+      background-size: contain;
+    }
+    .login-logo-text{
+      color: #444;
+      font-size: 15px;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  }
+}

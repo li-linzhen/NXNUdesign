@@ -1,0 +1,8 @@
+{
+  "ChaChongManagerUrl": "/chachongManage_s/",
+  "ChaChongAutherUrl": "/chachongauth_s/",
+
+  "ZYCIntegrationUrl": "/zycIntegration_s/",
+  "ZYCManagerUrl": "/zycManagement_s/",
+  "ZYCSynergyUrl": "/zycSynergy_s/"
+}

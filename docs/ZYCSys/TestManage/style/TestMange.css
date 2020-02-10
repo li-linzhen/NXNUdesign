@@ -1,0 +1,49 @@
+.test-ture {
+  padding-left: 80%;
+}
+.box-upload {
+  width: 90%;
+  background: url(../../images/bord.jpg) no-repeat;
+  background-size: 95% 100%;
+  padding: 35px;
+  margin: 10px;
+}
+.ant-upload-list {
+  padding-left: 10px;
+  width: 85%;
+  overflow-y: auto;
+  height: 250px;
+}
+.ant-btn {
+  margin-bottom: 20px;
+}
+.ant-upload-list-item {
+  height: 27px;
+  padding-left: 17px;
+  margin-left: 30px;
+  background: beige;
+}
+
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
+}
+.jokes-box {
+  background: url(../../images/joke.jpg) no-repeat;
+  background-size: 63px 72px;
+  height: 75px;
+  background-position: 0px 8px;
+  width: 90%;
+  padding-left: 61px;
+  padding-top: 14px;
+}
+.jokes-box:hover{
+  cursor: pointer;
+}

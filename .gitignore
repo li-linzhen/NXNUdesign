@@ -1,0 +1,6 @@
+node_modules
+/npm-debug.log.*
+/docs/.vs
+/backup
+/.idea
+/.vscode

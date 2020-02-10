@@ -1,0 +1,73 @@
+.lz-login{
+
+  input{
+    text-fill-color:rgba(0, 0, 0, 0.65);-webkit-text-fill-color:rgba(0, 0, 0, 0.65);
+  }
+  input:focus{
+    outline:none;
+  }
+  input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  position: relative;
+  .lz-login-span{
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 16px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    font-feature-settings: 'tnum';
+    display: inline-block;
+    width: 100%;
+    text-align: start;
+    .lz-login-prefix{
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      z-index: 2;
+      color: rgba(0, 0, 0, 1);
+      line-height: 0;
+      transform: translateY(-50%);
+      list-style: none;
+      font-feature-settings: 'tnum';
+      text-align: start;
+      font-size: 16px;
+      font-variant: tabular-nums;
+    }
+    .lz-login-lg{
+      border: 0;
+      outline:none;
+      color: rgba(0, 0, 0, 0.65) !important;
+      padding-left: 44px;
+      font-size: 16px;
+      line-height: 1.5;
+      width: 100%;
+      padding-right: 30px;
+    }
+    .lz-input-icon{
+      position: absolute;
+      top: 7px;
+      right: 0px;
+      z-index:5;
+      background-repeat: no-repeat; /*设置图片不重复*/
+      background-position: 0px 0px; /*图片显示的位置*/
+      width: 20px; /*设置图片显示的宽*/
+      height: 20px; /*图片显示的高*/
+    }
+    .user-icon{
+      background-image: url('../style/user-icon.png'); /*引入图片图片*/
+    }
+    .pwd-icon{
+      background-image: url('../style/pwd-icon.png'); /*引入图片图片*/
+    }
+  }
+
+}
