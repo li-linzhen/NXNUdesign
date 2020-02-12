@@ -117,7 +117,7 @@ class LoginPage2 extends React.Component {
     let corpUuid = '';
     LoginUtil.saveLoginData(loginData, corpUuid);
     //刷新界面  去到主页
-    window.location.href = '/ZYC/TestManagePage';
+    window.location.href = '/ZYC/ProfileManagePage';
   };
 
   handleOnChange = (e) => {

@@ -1,6 +1,13 @@
 import Common from '../../public/script/common';
 function ModuleMenus() {
   this.mainMenus = [
+    
+    {
+      name: '个人资料',
+      to: '/ZYC/ProfileManagePage',
+      icon: 'solution',
+      childItems: []
+    },
     {
       name: '程序测试',
       to: '/ZYC/TestManagePage',

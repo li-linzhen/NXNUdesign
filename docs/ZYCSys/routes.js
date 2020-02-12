@@ -6,6 +6,7 @@ import Common from '../public/script/common';
 import AsyncComponent from '../lib/Components/AsyncComponent';
 import CargoOwnerPage from './CMS/xxx/XxxPage';
 import DemoPage from './CMS/demo/DemoPage';
+import ProfileManagePage from './ProfileManage/ProfileManagePage'
 import TestManagePage from './TestManage/TestManagePage'
 import TestDetail from './TestManage/components/TestDetail'
 import ItemBankManage from './ItemBankManage/ItemBankManage'
@@ -32,6 +33,10 @@ let mainRoutes = [
   {
     path: 'CMS/DemoPage',
     component: DemoPage
+  },
+  {
+    path: 'ProfileManagePage',
+    component: ProfileManagePage
   },
   {
     path: 'TestManagePage',
