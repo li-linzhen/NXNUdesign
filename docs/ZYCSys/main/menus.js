@@ -4,6 +4,12 @@ function ModuleMenus() {
     {
       name: '程序测试',
       to: '/ZYC/TestManagePage',
+      icon: 'edit',
+      childItems: []
+    },
+    {
+      name: '题库管理',
+      to: '/ZYC/ItemBankManage',
       icon: 'profile',
       childItems: []
     },

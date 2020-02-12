@@ -5,15 +5,10 @@
 
 import React from 'react'
 import { Divider, Upload, Icon, message, Button } from 'antd'
-let Common = require('../../public/script/common')
-let iconfont = require('../../public/script/iconfont')
-import echarts from 'echarts/lib/echarts'
 import ServiceMsg from '../../lib/Components/ServiceMsg'
-import ReactEcharts from './components/ChartData'
 import GoDetailUtil from '../../lib/Components/GoDetailUtil'
 import TestManageStore from './store/TestManageStore'
 import TestManageActions from './action/TestManageActions'
-import axios from 'axios';
 import './style/TestMange.css'
 const { Dragger } = Upload
 

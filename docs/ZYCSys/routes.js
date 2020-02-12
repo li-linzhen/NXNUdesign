@@ -8,6 +8,7 @@ import CargoOwnerPage from './CMS/xxx/XxxPage';
 import DemoPage from './CMS/demo/DemoPage';
 import TestManagePage from './TestManage/TestManagePage'
 import TestDetail from './TestManage/components/TestDetail'
+import ItemBankManage from './ItemBankManage/ItemBankManage'
 
 import RunManagePage from './RunManage/RunManagePage'
 import SaleManagePage from './SaleManage/SaleManagePage'
@@ -39,6 +40,10 @@ let mainRoutes = [
       path: 'TestDetail',
       component: TestDetail
     }]
+  },
+  {
+    path: 'ItemBankManage',
+    component: ItemBankManage
   },
 
   {
