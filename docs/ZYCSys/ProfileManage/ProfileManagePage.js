@@ -47,9 +47,11 @@ class AddGoods extends React.Component {
   }
   //增加按钮
   handleAdd = () => {
+    const { filter } = this.state
+    console.log(filter)
     let { VipDetails } = this.state;
-    Common.deskMessage('正在新增商品', 'info');
-    Common.deskMessage('新增商品成功', 'success');
+    Common.deskMessage('正在修改...', 'info');
+    Common.deskMessage('修改成功', 'success');
 
     console.log(1)
     // alert('新增成功！')
@@ -59,6 +61,7 @@ class AddGoods extends React.Component {
     const id = e.target.id;
     const value = e.target.value;
     obj[e.target.id] = e.target.value;
+    console.log(obj)
 
     let rc = true;
     // if (isQueryForm !== true) {
@@ -75,6 +78,8 @@ class AddGoods extends React.Component {
   }
 
   handleChange = info => {
+    let obj = this.state.filter;
+
     if (info.file.status === 'uploading') {
       this.setState({ loading: true });
       return;
@@ -83,8 +88,11 @@ class AddGoods extends React.Component {
       // Get this url from response in real world.
       getBase64(info.file.originFileObj, imageUrl =>
         this.setState({
+          filter:{imageUrl:imageUrl},
           imageUrl,
           loading: false,
+        },()=>{
+          console.log(this.state.filter)
         }),
       );
     }
@@ -97,6 +105,7 @@ class AddGoods extends React.Component {
       wrapperCol: { span: 10 },
     };
     const { filter } = this.state
+    console.log(filter)
     const uploadButton = (
         <div>
           <Icon type={this.state.loading ? 'loading' : 'plus'} />
@@ -127,16 +136,16 @@ class AddGoods extends React.Component {
 
       </FormItem>
       <FormItem {...formItemLayout} label="姓名" colon={true} className={layoutItem}  >
-        <Input type="text" name="stock" id="stock" value={filter.stock} onChange={this.handleOnChange} />
+        <Input type="text" name="name" id="name" value={filter.name} onChange={this.handleOnChange} />
       </FormItem>
       <FormItem {...formItemLayout} label="手机号" colon={true} >
-        <Input type="text" name="sellprice" id="sellprice" value={filter.sellprice} onChange={this.handleOnChange} />
+        <Input type="text" name="phone" id="phone" value={filter.phone} onChange={this.handleOnChange} />
       </FormItem>
       <FormItem {...formItemLayout} label="密码" colon={true} className={layoutItem} >
-        <Input type="text" name="price" id="price" value={filter.price} onChange={this.handleOnChange} />
+        <Input type="text" name="password" id="password" value={filter.password} onChange={this.handleOnChange} />
       </FormItem>
       <FormItem {...formItemLayout} label="备注" colon={true} className={layoutItem}  >
-        <TextArea rows={2} />
+        <TextArea rows={2} id="remark" value={filter.remark} onChange={this.handleOnChange} />
       </FormItem>
     </div>;
 
