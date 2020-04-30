@@ -28,7 +28,7 @@
     "fbemitter": "^2.1.1",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^3.2.0",
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "prop-types": "^15.7.1",
     "rc-queue-anim": "^1.5.0",
     "rc-tween-one": "^1.7.8",
